@@ -25,3 +25,4 @@ create_control <- function (issn, from, to){
 }
 
 ### In this function, I'm dropping works that haven't referenced anything (referenced_works) not sure this is the right approach, sometimes dropping articles which are seemingly important
+## If oa_fetch() is accessing the Crossref DOI metadata, reference data is spotty and depends a LOT on the publisher

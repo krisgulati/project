@@ -31,7 +31,8 @@ austin_holland_oa_2 <- oa_fetch(
   verbose = TRUE
 )
 
-
+## Just printing out the classes won't stop things if there's a problem
+## Use an assertion instead:  assertthat::assert_that(all.equal(class(austin_holland_oa, austin_holland_oa_2)))
 ### Check if both are dfs
 class (austin_holland_oa)
 class (austin_holland_oa_2)
@@ -76,6 +77,8 @@ aline_gubrium_oa <- oa_fetch(
 )
 
 ### Note, both ORCID and OA ID give the same results 
+## * Check with an assertion, here and below?  
+## * Not checking classes here? 
 
 ### 3. Bart Knijnenburg
 

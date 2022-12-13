@@ -17,7 +17,7 @@
 # Allan Josephson (couldn't find)
 
 
-
+## Odd mix of snake_case and camelCase
 import_Authors <- function (){
   ### 1. Austin Holland
   
@@ -173,6 +173,10 @@ import_Authors <- function (){
   
   ### Doesn't have too many publications, so I removed him from my dataset.
   
-list_dfs <- list("austin_holland"=austin_holland_merged, "aline_gubrium" = aline_gubrium_oa, "bart" = bart_k_oa, "ron" = ron_h_oa, "michael" = michael_l_oa)
-return(list_dfs)
+  list_dfs <- list("austin_holland"=austin_holland_merged, 
+                   "aline_gubrium" = aline_gubrium_oa, 
+                   "bart" = bart_k_oa, 
+                   "ron" = ron_h_oa, 
+                   "michael" = michael_l_oa)
+  return(list_dfs)
 }
